@@ -1,0 +1,10 @@
+cd          cambiar directorio
+pwd         mostrar posición actual
+ls          listar archivos
+ls -al      listar archivos y ocultos en lista
+clear       limpiar consola
+ctrl + l    limpiar consola
+cat <document>  mostrar contenido de archivo
+rm <document>   borrar archivo
+
+Walter Barrios, tengo 25 años
