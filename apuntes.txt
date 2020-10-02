@@ -8,3 +8,19 @@ cat <document>  mostrar contenido de archivo
 rm <document>   borrar archivo
 
 Walter Barrios, tengo 25 años
+
+/*****GITHUB GIT********/
+*Cambiar el email en la configuración*
+git config --global user.email "w.barrios.silva@gmail.com"
+*Ver la configuración*
+git config -l
+*Crear llave ssh*
+ssh-keygen -t rsa -b 4096 -C "w.barrios.silva@gmail.com"
+*Evaluar si el ssh está corriendo*
+eval $(ssh-agent - s)
+*Agregar la llave a windows*
+ssh-add ~/.ssh/id_rsa
+*Muestra url del repositorio*
+git remote -v
+*Cambia la url del proyecto por el ssh*
+git remote set-url origin git@github.com:WalterBarriosS/hyperblog.git
