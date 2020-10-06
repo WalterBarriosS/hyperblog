@@ -17,10 +17,14 @@ git config -l
 *Crear llave ssh*
 ssh-keygen -t rsa -b 4096 -C "w.barrios.silva@gmail.com"
 *Evaluar si el ssh está corriendo*
-eval $(ssh-agent - s)
+eval $(ssh-agent -s)
 *Agregar la llave a windows*
 ssh-add ~/.ssh/id_rsa
 *Muestra url del repositorio*
 git remote -v
 *Cambia la url del proyecto por el ssh*
 git remote set-url origin git@github.com:WalterBarriosS/hyperblog.git
+*hacer commit a los cambios*
+git commit -am "Mensaje"
+*Crear alias de comando*
+alias arbolito="git log --all --graph --decorate --oneline"
